@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "babel-eslint": "7.1.1",
-    "eslint": "3.18.0",
+    "eslint": "4.18.2",
     "http": "^0.0.0",
     "nodemailer": "^6.3.0",
     "util": "^0.12.1"
