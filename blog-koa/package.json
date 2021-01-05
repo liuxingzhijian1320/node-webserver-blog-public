@@ -7,7 +7,7 @@
     "prod": "cross-env NODE_ENV=production nodemon myblog3-app-5454.js"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "cross-env": "^5.2.0",
     "crypto": "^1.0.1",
     "debug": "~2.6.8",
