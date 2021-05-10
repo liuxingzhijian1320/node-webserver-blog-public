@@ -12,7 +12,7 @@
         "core-js": "^2.6.5",
         "element-ui": "2.4.6",
         "js-md5": "^0.7.3",
-        "lodash": "^4.17.15",
+        "lodash": "^4.17.21",
         "mavon-editor": "^2.7.5",
         "screenfull": "^4.2.1",
         "vue": "^2.6.10",
