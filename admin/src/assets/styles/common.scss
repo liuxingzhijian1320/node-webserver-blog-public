@@ -1,0 +1,41 @@
+.dc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clearfix {
+    clear: both;
+    overflow: hidden;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.pagebox {
+    .pagebox-search {
+        padding: 15px 15px 0 15px;
+        border-bottom: 5px solid #f0f3f4;
+    }
+    .pagebox-content {
+        padding: 15px 15px 0 15px;
+    }
+    .pagebox-pagination {
+        padding: 15px;
+    }
+}
+
+// transition scss
+// .fade-page-enter-active,
+// .fade-page-leave-active {
+//     transition: all 0.5s;
+// }
+// .fade-page-enter {
+//     opacity: 0;
+//     transform: translateX(-30px);
+// }
+// .fade-page-leave-to {
+//     opacity: 0;
+//     transform: translateX(-30px);
+// }

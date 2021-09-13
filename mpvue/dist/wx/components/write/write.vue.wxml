@@ -1,0 +1,9 @@
+<template name="d4545964">
+  <view class="_div data-v-6d81a65b write-box">
+    <image src="{{avatar}}" wx:if="{{isShow}}" alt class="_img data-v-6d81a65b avatar"></image>
+    <view class="_div data-v-6d81a65b info">
+      <view class="_div data-v-6d81a65b input">
+        <view class="_div data-v-6d81a65b close dc" wx:if="{{showClose}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">关闭</view> <textarea class="_textarea data-v-6d81a65b textarea" placeholder="{{placeholder}}" value="{{content}}" bindinput="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" /></view> <view class="_div data-v-6d81a65b bottom"><label wx:if="{{userInfo && userInfo.nickname}}" class="_span data-v-6d81a65b">登录昵称:
+        {{userInfo.nickname}}</label> <view class="_div data-v-6d81a65b submit" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+        {{userInfo && userInfo.nickname?'提交':'登录'}}
+      </view></view></view></view></template>

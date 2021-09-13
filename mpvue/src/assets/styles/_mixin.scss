@@ -1,0 +1,89 @@
+@mixin hbPlaceholder() {
+  &::-webkit-input-placeholder {
+    /* WebKit browsers */
+    @content;
+  }
+
+  &:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    @content;
+  }
+
+  &::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    @content;
+  }
+
+  &:-ms-input-placeholder {
+    /* Internet Explorer 10+ */
+    @content;
+  }
+}
+
+@mixin border($direction, $color) {
+  position: relative;
+
+  @if $direction==top {
+    ::before {
+      position: absolute;
+      display: block;
+      content: '';
+      background: $color;
+
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      transform-origin: 0 0;
+      transform: scaleY(0.5);
+    }
+  }
+
+  @else if $direction==left {
+    ::before {
+      position: absolute;
+      display: block;
+      content: '';
+      background: $color;
+
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 1px;
+      transform-origin: 0 0;
+      transform: scaleX(0.5);
+    }
+  }
+
+  @else if $direction==right {
+    ::after {
+      position: absolute;
+      display: block;
+      content: '';
+      background: $color;
+
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 1px;
+      transform-origin: 100% 0;
+      transform: scaleX(0.5);
+    }
+  }
+
+  @else if $direction==bottom {
+    ::after {
+      position: absolute;
+      display: block;
+      content: '';
+      background: $color;
+
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 1px;
+      transform-origin: 0 100%;
+      transform: scaleY(0.5);
+    }
+  }
+}

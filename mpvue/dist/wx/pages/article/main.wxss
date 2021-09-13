@@ -1,0 +1,97 @@
+
+.content.data-v-00451799 {
+  padding: 30rpx;
+  min-height: 100vh;
+  background: #efefee;
+  box-sizing: border-box;
+}
+.content .website.data-v-00451799 {
+  padding: 20rpx 0;
+  background: #fff;
+  border-radius: 6rpx;
+  margin-bottom: 20rpx;
+  font-size: 28rpx;
+}
+.content .website .copy.data-v-00451799 {
+  color: #4ebbaa;
+  display: inline-block;
+  margin-left: 20rpx;
+}
+.content .list.data-v-00451799 {
+  width: 100%;
+}
+.content .list .item.data-v-00451799 {
+  margin-bottom: 30rpx;
+  background: #fff;
+  padding: 30rpx;
+  border-radius: 6rpx;
+}
+.content .list .item-info.data-v-00451799 {
+  display: flex;
+  position: relative;
+}
+.content .list .item-top.data-v-00451799 {
+  position: absolute;
+  background: #4ebbaa;
+  padding: 1rpx 3rpx;
+  top: -30rpx;
+  right: -30rpx;
+  font-size: 22rpx;
+  color: #fff;
+  text-align: right;
+}
+.content .list .item-left.data-v-00451799 {
+  flex: 1;
+}
+.content .list .title.data-v-00451799 {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15rpx;
+}
+.content .list .subtitle.data-v-00451799 {
+  font-size: 26rpx;
+  color: #999;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx dashed #efefee;
+}
+.content .list .desc.data-v-00451799 {
+  padding: 20rpx 0;
+  font-size: 28rpx;
+  color: #666;
+}
+.content .list .cover.data-v-00451799 {
+  width: 100%;
+  height: 240rpx;
+  border-radius: 4rpx;
+}
+.pagenation.data-v-00451799 {
+  width: 200rpx;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 28rpx;
+  color: #999;
+  display: flex;
+  padding-top: 10rpx;
+  padding-bottom: 20rpx;
+  text-align: center;
+}
+.date.data-v-28216832 {
+  display: flex;
+  width: 160rpx;
+  color: #b2b6b0;
+  font-size: 26rpx;
+  justify-items: self-end;
+}
+.date .day.data-v-28216832 {
+  margin-right: 6rpx;
+  font-size: 80rpx;
+  background-image: linear-gradient(90deg, #4ebbaa, #6bc30d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.date .month.data-v-28216832 {
+  display: block;
+  text-transform: uppercase;
+}

@@ -1,0 +1,11 @@
+<template name="793d969f">
+  <view class="_div data-v-28216832 date">
+    <view class="_div data-v-28216832 day">{{day}}</view>
+    <view class="_div data-v-28216832 other dc">
+      <view class="_div data-v-28216832">
+        <view class="_div data-v-28216832 month">{{month}}</view>
+        <view class="_div data-v-28216832 year">{{year}}</view>
+      </view>
+    </view>
+  </view>
+</template>

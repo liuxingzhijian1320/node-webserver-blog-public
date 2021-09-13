@@ -1,0 +1,5 @@
+<import src="/components/date.vue.wxml" />
+<import src="/components/write/write.vue.wxml" />
+<import src="/modules/mpvue-wemark/src/wemark.vue.wxml" />
+<import src="/components/write/write.vue.wxml" />
+<import src="/components/write/commentlist.vue.wxml" />

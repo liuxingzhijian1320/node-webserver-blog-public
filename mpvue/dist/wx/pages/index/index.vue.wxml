@@ -1,0 +1,39 @@
+<template name="341c8cbc">
+  <view class="_div data-v-6b277275 index">
+    <image class="_image data-v-6b277275 inner-bg fixed" src="{{bg}}"></image>
+    <view class="_div data-v-6b277275 out-value fixed">
+      <view class="_div data-v-6b277275 sidertips"> 2021年4月12日 12:00:00 开源实验室 上线啦 </view>
+      <view class="_div data-v-6b277275 logo dc">
+        <image class="_image data-v-6b277275 logo-bg posit" src="{{logo}}"></image>
+        <view class="_div data-v-6b277275 logo-out posit">
+          <view class="_div data-v-6b277275 logo-title">少壮不努力</view>
+          <view class="_div data-v-6b277275 logo-subtitle">长大开夏利</view>
+          <view class="_div data-v-6b277275 logo-btn-list">
+            <view class="_div data-v-6b277275 logo-btn github dc" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">Github</view>
+            <view class="_div data-v-6b277275 logo-btn dc article" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">进入博客</view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-6b277275 blog">
+        <view class="_div data-v-6b277275 section-title">Hello 10个肉包子</view>
+        <view class="_div data-v-6b277275 section-subtitle">博客使用如下技术/工具构建</view>
+        <scroll-view scroll-x="true" style="width: 690rpx;" class="_scroll-view data-v-6b277275">
+          <image class="_image data-v-6b277275 xmind" src="{{xmind}}"></image>
+        </scroll-view>
+      </view>
+      <view class="_div data-v-6b277275 find dc">
+        <view class="_div data-v-6b277275">
+          <view class="_div data-v-6b277275 section-title">你可以在这些场所找到我</view>
+          <view class="_ul data-v-6b277275 contact-items">
+            <view class="_li data-v-6b277275 contact-item dc" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+              <view class="_i data-v-6b277275 iconfont icon-github my-svg-icon"></view>
+            </view>
+            <view class="_li data-v-6b277275 contact-item dc dc" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+              <view class="_i data-v-6b277275 iconfont icon-csdn my-svg-icon"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

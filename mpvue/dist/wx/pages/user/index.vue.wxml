@@ -1,0 +1,28 @@
+<template name="285e6e51">
+  <view class="_div data-v-55f4cf1e user">
+    <view class="_div data-v-55f4cf1e min-content">
+      <view class="_header data-v-55f4cf1e header">
+        <image src="{{avatar}}" bindtap="handleProxy" alt class="_img data-v-55f4cf1e avatar" data-eventid="{{'0'}}" data-comkey="{{$k}}"></image>
+        <view wx:if="{{userInfo && userInfo.nickname}}" class="_div data-v-55f4cf1e">
+          <view class="_div data-v-55f4cf1e info">{{userInfo.nickname}}</view>
+          <view class="_div data-v-55f4cf1e info">登录账号：{{userInfo.username}}</view>
+        </view>
+        <view class="_div data-v-55f4cf1e login" wx:else bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">请登录</view>
+      </view>
+      <view class="_div data-v-55f4cf1e section">
+        <view class="_div data-v-55f4cf1e section-list px1" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">
+          <view class="_div data-v-55f4cf1e section-key">
+            <view class="_i data-v-55f4cf1e iconfont icon-open item-icon"></view>
+          </view>
+          <view class="_div data-v-55f4cf1e section-val">开源实验室</view>
+        </view>
+        <view class="_div data-v-55f4cf1e section-list px1" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">
+          <view class="_div data-v-55f4cf1e section-key">
+            <view class="_i data-v-55f4cf1e iconfont icon-about item-icon"></view>
+          </view>
+          <view class="_div data-v-55f4cf1e section-val">关于本站</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

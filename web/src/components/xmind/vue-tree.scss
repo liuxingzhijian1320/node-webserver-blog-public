@@ -1,0 +1,83 @@
+.vue-tree {
+    text-align: center;
+    &:before,
+    &:after {
+        display: table;
+        content: '';
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.vue-tree-node,
+.vue-tree-node-children {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    &:before,
+    &:after {
+        transition: all .35s;
+    }
+}
+
+.vue-tree-node-label {
+    position: relative;
+    display: inline-block;
+    .vue-tree-node-label-inner {
+        margin: 0 10px;
+        padding: 10px 15px;
+        border-radius: 3px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, .15);
+        text-align: center;
+    }
+}
+
+.vue-tree-node {
+    display: table-cell;
+    padding-top: 20px;
+    vertical-align: top;
+    &:before,
+    &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 19px;
+        content: '';
+    }
+    &:after {
+        left: 50%;
+        border-left: 1px solid #ddd;
+    }
+    &:not(:first-child):before,
+    &:not(:last-child):after {
+        border-top: 1px solid #ddd;
+    }
+}
+
+.vue-tree>.vue-tree-node {
+    padding-top: 0;
+    &:after {
+        border-left: 0;
+    }
+}
+
+.vue-tree-node-children {
+    display: table;
+    padding-top: 20px;
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        height: 20px;
+        border-left: 1px solid #ddd;
+        content: '';
+    }
+    &:after {
+        display: table;
+        clear: both;
+        content: '';
+    }
+}
