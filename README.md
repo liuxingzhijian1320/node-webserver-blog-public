@@ -6,7 +6,7 @@
 ### 体验 demo
 
 前端博客：[demo](https://www.zhooson.cn) (支持移动端访问)  
-admin 系统： [游客模式访问](https://admin.zhooson.com). 账号：test 密码：0000  
+admin 系统： [游客模式访问](https://admin.zhooson.cn). 账号：test 密码：0000  
 微信小程序搜索：10 个肉包子
 
 ### 新版本博客系统
