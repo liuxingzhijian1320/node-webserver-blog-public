@@ -200,6 +200,7 @@ function ArticlelAdd(props) {
                 ]}
               >
                 <UploadCustom imageUrl={detail.cover} fn={uploadSuccess} />
+                参考尺寸 500*240
               </Form.Item>
               <Form.Item
                 label="标签"

@@ -101,7 +101,7 @@ export default {
   width: 200px;
   height: 120px;
   border-radius: 4px;
-  background-size: 100%;
+  background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
 }

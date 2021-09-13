@@ -68,9 +68,15 @@ function HotelDetail(props) {
         ...detail,
         cover: data,
       });
+      form.setFieldsValue({
+        cover: data,
+      });
     } else if (type === 'removed') {
       setDetail({
         ...detail,
+        cover: '',
+      });
+      form.setFieldsValue({
         cover: '',
       });
     }
@@ -212,6 +218,7 @@ function HotelDetail(props) {
                 ]}
               >
                 <UploadCustom imageUrl={detail.cover} fn={uploadSuccess} />
+                参考尺寸 500*240
               </Form.Item>
 
               <Form.Item label="标签" name="tagList">
