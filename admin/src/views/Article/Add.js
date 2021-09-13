@@ -46,7 +46,7 @@ function ArticlelAdd(props) {
   };
 
   const getCatelist = () => {
-    getCateList().then((res) => {
+    getCateList({ pageIndex: 1, pageSize: 100 }).then((res) => {
       setCateList(res.list);
     });
   };
@@ -126,7 +126,7 @@ function ArticlelAdd(props) {
     await uploadPic($file, bucket)
       .then((res) => {
         if (res.code === 200) {
-          vm.current.$img2Url($file.name, res.url);
+          vm.current.$img2Url($file.name, res.data.url);
           message.success('上传成功!');
         } else {
           message.error(res.message);
