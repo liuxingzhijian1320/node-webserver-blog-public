@@ -36,7 +36,7 @@ class IPService extends Service {
 
   async queryList({ ip = '', pageIndex = 1, pageSize = 12 }) {
     let str = '';
-    if (str) {
+    if (ip) {
       str = `and ip like '%${ip}%'`;
     }
 
