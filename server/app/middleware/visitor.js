@@ -24,7 +24,7 @@ module.exports = (app, options = {}) => {
 
     const { root } = await service.user.queryRoot(userId);
 
-    if (root === 99) {
+    if (root === 77) {
       await next();
     } else {
       cb(ctx, 200, 300, '暂无权限操作数据', {});

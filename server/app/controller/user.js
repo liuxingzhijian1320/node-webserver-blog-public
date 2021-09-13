@@ -101,7 +101,7 @@ class UserController extends Controller {
         return;
       }
 
-      if (root != 99 && root != 88) {
+      if (root != 77 && root != 88) {
         cb(ctx, 200, 201, '登录账号权限等级不足，请联系管理员', {});
         return;
       }
@@ -144,7 +144,7 @@ class UserController extends Controller {
         cb(ctx, 200, 201, '当前用户不存在', {});
         return;
       }
-      if (data.root === 99) {
+      if (data.root === 77) {
         cb(ctx, 200, 200, '查询成功', { auth: 'QsislescF' });
       } else {
         cb(ctx, 200, 200, '查询成功', { auth: '99dlaR0pdF' });
@@ -163,7 +163,7 @@ class UserController extends Controller {
       const userDetail = await service.user.queryAuth(ctx.state.user.userId);
       const list = await service.user.queryList(params);
 
-      if (userDetail.root != 99) {
+      if (userDetail.root != 77) {
         // 非超管人员，只能看到脱敏数据
         for (let val of list.list) {
           val.username = hideWhite(val.username);

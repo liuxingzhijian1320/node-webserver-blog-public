@@ -94,7 +94,7 @@ class CodeController extends Controller {
 
       const userDetail = await service.user.queryAuth(ctx.state.user.userId);
       const list = await service.code.queryList(params);
-      if (userDetail.root != 99) {
+      if (userDetail.root != 77) {
         // 非超管人员，只能看到脱敏数据
         for (let val of list.list) {
           val.username = hideWhite(val.username);
